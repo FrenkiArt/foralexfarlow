@@ -37,6 +37,7 @@ import "./scss/pagination.scss";
 import "./scss/popup.scss";
 import "./scss/sections.scss";
 import "./scss/links.scss";
+import "./scss/card.scss";
 
 import "./scss/footer.scss";
 import "./scss/stuff.scss";

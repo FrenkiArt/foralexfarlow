@@ -1,0 +1,91 @@
+.card {
+  border-radius: 1rem;
+  border: 0.5px solid #cecece;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.5rem;
+
+  // .card__title
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  // .card__list-options
+  &__list-options {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+    line-height: 1.25;
+    list-style-type: none;
+    padding: 0;
+
+    .card__option:nth-of-type(n + 4) {
+      display: none;
+    }
+  }
+
+  // .card__option
+  &__option {
+    align-items: flex-end;
+    display: flex;
+    gap: 0.2rem;
+    justify-content: space-between;
+  }
+
+  // .card__option-name
+  &__option-name {
+    flex-shrink: 0;
+    max-width: 40%;
+  }
+
+  // .card__option-value
+  &__option-value {
+    flex-shrink: 0;
+    max-width: 40%;
+    text-align: right;
+  }
+
+  // .card__dots
+  &__dots {
+    border-bottom: 2px dotted #cecece;
+    flex-shrink: 1;
+    width: 100%;
+  }
+
+  // .card__more
+  &__more {
+    cursor: pointer;
+    margin: 0 auto;
+  }
+
+  // .card__more--text-1
+  &__more--text-1 {
+    display: inline-block;
+  }
+
+  // .card__more--text-2
+  &__more--text-2 {
+    display: none;
+  }
+
+  // .card__footer
+  &__footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card.active {
+  .card__option {
+    display: flex;
+  }
+
+  .card__more--text-1 {
+    display: none;
+  }
+
+  .card__more--text-2 {
+    display: inline-block;
+  }
+}
